@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="description" content="some description about the slides">
+    <meta name="author" content="You">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <section>
+          <h1>NodeBots</h1>
+          <h6>with</h6>
+          <h2>Garoa Dojo Shield</h2>
+        </section>
+        <section>
+          <h2>O que você vai precisar:</h2>
+          <ul>
+            <li class="fragment">1 Arduino</li>
+            <li class="fragment">1 Garoa Dojo Shield</li>
+            <li class="fragment">terminal(para rodar a aplicacão node)</li>
+            <li class="fragment">Cérebro</li>
+          </ul>
+        </section>
+        <section>
+          <section>
+            <h1>Arduino</h1><a href="https://www.arduino.cc/">https://www.arduino.cc/</a>
+          </section>
+          <section data-background="img/arduino.jpg" data-background-color="#fff" data-background-size="1000px"></section>
+          <section>
+            <h2>Shield's para arduino</h2><img src="img/shield.jpg"><img src="img/shield.jpg">
+          </section>
+        </section>
+        <section data-url="https://garoa.net">
+          <section>
+            <h2>Garoa Dojo Shield</h2><a href="https://github.com/garoa/dojo-shield">https://github.com/garoa/dojo-shield</a>
+          </section>
+          <section data-background="img/dojo-shield.jpg"></section>
+          <section>
+            <h2>O que é um Coding Dojo?</h2><img src="img/shinkendo.gif" alt="Coding Dojo">
+          </section>
+          <section style="display: block;">
+            <h3>Um coding dojo é isso aqui! </h3>
+            <p class="fragment">De acordo com o </p><a href="http://codingdojo.org/" class="fragment">http://codingdojo.org/</a>
+            <blockquote cite="http://codingdojo.org/" class="fragment">"A Coding Dojo is a meeting where a bunch of coders get together to work on a programming challenge."</blockquote>
+          </section>
+        </section>
+        <section>
+          <section>
+            <h2>NodeBots</h2><a href="http://nodebots.io/">http://nodebots.io/</a>
+          </section>
+          <section>
+            <h2>Mas porque node.js?</h2>
+            <p class="fragment">Porque é Javascript!</p>
+          </section>
+          <section data-background-image="img/serious.gif"></section>
+          <section>
+            <h2>Mais motivos</h2><br>
+            <ul>
+              <li class="fragment">Fácil de aprender.</li>
+              <li class="fragment">Para front's e back-end's</li>
+              <li class="fragment">Mais usada no github(comunidade open)</li>
+              <li class="fragment">Chrome V8 <strike>Stamin-up</strike></li>
+              <li class="fragment">non-bloking IO</li>
+              <li class="fragment">npm - varios modulos</li>
+            </ul>
+          </section>
+        </section>
+        <section>
+          <section data-background-color="#efe13d">
+            <h2>Johnny Five</h2><a style="color: #000" href="http://johnny-five.io/">http://johnny-five.io/</a><br><br><br><img src="img/heres-johnny.png" class="johnny">
+          </section>
+          <section>
+            <h3>hello world!</h3>
+            <pre><code class="js">var five = require('johnny-five');
+var board = new five.board();
+
+board.on('ready', function(){
+  var led = new five.Led(13);
+  led.blink(500);
+});</code></pre><img src="img/blink-led.gif">
+          </section>
+        </section>
+        <section>
+          <section>
+            <h2>npm modules</h2>
+            <ul>
+              <li class="fragment">express</li>
+              <li class="fragment">websockets</li>
+              <li class="fragment">twitter</li>
+              <li class="fragment">ar-drone</li>
+              <li class="fragment">dualsock-controller</li>
+            </ul>
+          </section>
+          <section>
+            <h2>dualshock-controller</h2>
+            <p>video teste dualshock controller no garoa dojo shield</p>
+          </section>
+          <section data-background="img/wow.gif"></section>
+          <section>
+            <h2>Control a car</h2>
+            <iframe src="https://player.vimeo.com/video/86477674" width="700" height="481" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+          </section>
+        </section>
+        <section data-background="img/sword.gif">
+          <h2>E começa o Dojo!!!</h2>
+        </section>
+      </div>
+    </div>
+    <script src="js/vendor/head.min.js"></script>
+    <script src="js/vendor/reveal.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
