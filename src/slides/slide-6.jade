@@ -1,0 +1,20 @@
+section
+	section(data-background-color="#efe13d")
+		h2 Johnny Five
+		a(style="color: #000" href="http://johnny-five.io/") http://johnny-five.io/
+		br
+		br
+		br
+		img(src="img/heres-johnny.png" class="johnny")
+	section
+		h3 hello world!
+		pre
+			code.js.
+				var five = require('johnny-five');
+				var board = new five.board();
+
+				board.on('ready', function(){
+				  var led = new five.Led(13);
+				  led.blink(500);
+				});
+		img(src="img/blink-led.gif")
